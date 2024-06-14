@@ -16,7 +16,7 @@
 .displayMessage{
     position: absolute; 
     bottom:3rem; 
-   
+   visibility: hidden;
 }
 .content{
     width:100%;
