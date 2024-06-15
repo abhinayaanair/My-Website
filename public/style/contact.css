@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    padding-left: 2px;
 }
 
 .main{
@@ -201,17 +202,17 @@
        
         justify-content: start;
         align-items:start;
-       
+       margin-bottom: 3rem;
     }
     .header h1{
        display: none;
        
     }
     .header h2{
-        /* position: absolute;
-        left:2rem;
-        top:7rem; */
-        margin-left:-4rem ;
+        
+     
+        top:10rem; 
+        margin-left:-5rem ;
         margin-top: -3rem;
         font-size: 1.6rem;
         letter-spacing: -0.05rem;
