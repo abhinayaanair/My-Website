@@ -29,10 +29,10 @@
   flex-direction: column;
 }
 #about {
-  background-color: #ffb400;
+  background-color: #AADC3F;
 }
 #about-nav {
-  color: #ffb400;
+  color: #AADC3F;
 }
 .navigation-bar {
   position: fixed;
@@ -57,7 +57,7 @@
   font-weight: 900;
 }
 .header h2 span {
-  color: #ffb400;
+  color: #AADC3F;
 }
 .title {
   padding-top: 0.5rem;
@@ -108,7 +108,7 @@
 
 .button {
   text-decoration: none;
-  border: 1px solid #ffb400;
+  border: 1px solid #AADC3F;
   padding: 1rem 0rem 1rem 2rem;
   border-radius: 2rem;
   color: white;
@@ -117,12 +117,12 @@
 
 .download-icon {
   color: white;
-  border: 2px solid #ffb400;
+  border: 2px solid #AADC3F;
   padding: 1rem;
   margin-left: 1rem;
   border-radius: 50%;
   font-size: 1rem;
-  background-color: #ffb400;
+  background-color: #AADC3F;
 }
 .download-button {
   width: 70%;
@@ -159,7 +159,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 3rem;
   position: relative;
-  color: #ffb400;
+  color: #AADC3F;
 }
 .experience-subpart div h3 span {
   font-weight: 400;
@@ -463,7 +463,7 @@ hr {
     font-weight: 900;
   }
   .header h2 span {
-    color: #ffb400;
+    color: #AADC3F;
   }
 
   .personal-info {
@@ -578,12 +578,12 @@ hr {
   }
   .download-icon {
     color: white;
-    border: 2px solid #ffb400;
+    border: 2px solid #AADC3F;
     padding: 1rem;
     margin-left: 1rem;
     border-radius: 50%;
     font-size: 1rem;
-    background-color: #ffb400;
+    background-color: #AADC3F;
   }
 
   .experience-div {
@@ -614,7 +614,7 @@ hr {
     font-family: "Poppins", sans-serif;
     font-size: 3rem;
     position: relative;
-    color: #ffb400;
+    color: #AADC3F;
   }
   .experience-subpart div h3 span {
     font-weight: 400;
