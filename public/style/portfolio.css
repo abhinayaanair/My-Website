@@ -23,10 +23,10 @@ body{
     flex-direction: column;
 }
 #portfolio{
-    background-color: #FFB400;
+    background-color: #AADC3F;
 }
 #portfolio-nav{
-    color:#FFB400 ;
+    color:#AADC3F ;
 }
 .header{
     width: 100%;
@@ -52,7 +52,7 @@ body{
 
 }
 .header h2 span{
-    color: #FFB400;
+    color: #AADC3F;
 }
 
 .navigation-bar{
@@ -142,7 +142,7 @@ body{
         font-weight: 900;
     }
     .header h2 span{
-        color: #FFB400;
+        color: #AADC3F;
     }
     .grid-portfolio{
         margin-top: -3rem;
