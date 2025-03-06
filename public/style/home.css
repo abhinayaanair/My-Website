@@ -52,7 +52,7 @@
 .text-uppercase{
     font-size:3.2rem;
     line-height: 4rem;
-    color:#FFB400;
+    color:#AADC3F;
 }
 
 .text-uppercase span{
@@ -71,7 +71,7 @@
 .hyphen{
     font-size: 4rem;
     margin-top: -1rem;
-    color:#FFB400;
+    color:#AADC3F;
 }
 
 .home-description{
@@ -87,7 +87,7 @@
 
 .button{
     text-decoration: none;
-    border: 1px solid #FFB400;
+    border: 1px solid #AADC3F;
     padding: 1rem 0rem 1rem 2rem;
     border-radius: 2rem;
     color: white;
@@ -95,22 +95,22 @@
 
 .arrow-icon{
     color: white;
-    border: 2px solid #FFB400;
+    border: 2px solid #AADC3F;
     padding: 1rem;
     margin-left: 1rem;
     border-radius: 50%;
     font-size: 1rem;
-    background-color: #FFB400;
+    background-color: #AADC3F;
 }
 
 
 #house{
     color:white;
-    background-color: #FFB400;
+    background-color: #AADC3F;
 }
 
 #house-nav{
-    color:#FFB400;
+    color:#AADC3F;
 }
 
 
