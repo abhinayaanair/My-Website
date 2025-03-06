@@ -4,6 +4,9 @@
     box-sizing: border-box;
     padding-left: 2px;
 }
+body{
+    background-color: #1b1a1a;
+}
 
 .main{
     width:100%;
