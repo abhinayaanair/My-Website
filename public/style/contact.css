@@ -27,10 +27,10 @@
 }
 
 #contact{
-    background-color: #FFB400;
+    background-color: #AADC3F;
 }
 #contact-nav{
-    color:#FFB400 ;
+    color:#AADC3F ;
 }
 .header{
     width: 100%;
@@ -56,7 +56,7 @@
 
 }
 .header h2 span{
-    color: #FFB400;
+    color: #AADC3F;
 }
 .navigation-bar{
     position: fixed;
@@ -108,7 +108,7 @@
     display: flex;
    }
    .icon-contact{
-    color:#FFB400;
+    color:#AADC3F;
     font-size: 2rem;
    }
    .icon-contact-div{
@@ -165,14 +165,14 @@
     width: 14rem;
     font-size: 1rem;
     background-color: transparent;
-    border: 2px solid #FFB400;
+    border: 2px solid #AADC3F;
     color:white;
     padding-left: 0.8rem;
     margin-top: 1rem;
 
    }
    .paper-plane{
-    background-color: #FFB400;
+    background-color: #AADC3F;
     padding: 1rem;
     border: none;
     border-radius: 30px; /* Adjust the border-radius to your preference */
@@ -219,7 +219,7 @@
         font-weight: 900;
     }
     .header h2 span{
-        color: #FFB400;
+        color: #AADC3F;
 
     }
     .contact{
