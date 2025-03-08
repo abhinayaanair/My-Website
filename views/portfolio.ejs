@@ -6,16 +6,74 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="/images/A.png">
-
     <link rel="stylesheet" href="/style/navbar.css">
     <link rel="stylesheet" href="/style/portfolio.css">
+
+    <!-- Inline CSS for Hover Effects -->
+    <style>
+        /* Grid item styling */
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        /* Inner grid div styling */
+        .inner-grid-div {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Image styling */
+        .inner-grid-div img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Overlay styling */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #AADC3F; /* Yellow overlay color */
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            opacity: 0; /* Hidden by default */
+            transition: opacity 0.3s ease; /* Smooth fade effect */
+        }
+
+        /* Description text styling */
+        .overlay p {
+            color:white;
+            font-size: 2rem;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Show overlay on hover */
+        .grid-item:hover .overlay {
+            opacity: 1;
+        }
+
+        /* Ensure overlay doesn't interfere on mobile */
+        @media (max-width: 768px) {
+            .overlay {
+                display: none; /* No overlay on mobile */
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="main">
@@ -25,39 +83,90 @@
                 <h2>MY <span>PORTFOLIO</span></h2>
             </div>
             <div class="grid-portfolio">
+                <!-- Grid Item 1 -->
                 <div class="grid-item" data-link="https://github.com/abhinayaanair/Recipe-Generator-AI">
-                    <div class="inner-grid-div"><img src="/images/recipe.png" alt=""></div>
+                    <div class="inner-grid-div">
+                        <img src="/images/recipe.png" alt="Recipe Generator">
+                        <div class="overlay">
+                            <p>AI-based recipe generator</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Grid Item 2 -->
                 <div class="grid-item" data-link="https://github.com/abhinayaanair/SPAM_CLASSIFIER">
-                    <div class="inner-grid-div"><img src="/images/spam.png" alt=""></div>
+                    <div class="inner-grid-div">
+                        <img src="/images/spam.png" alt="Spam Classifier">
+                        <div class="overlay">
+                            <p>Spam classifier</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Grid Item 3 -->
                 <div class="grid-item" data-link="https://github.com/abhinayaanair/Myntra_review_scrapper_ml">
-                    <div class="inner-grid-div"><img src="/images/myntra.png" alt=""></div>
+                    <div class="inner-grid-div">
+                        <img src="/images/myntra.png" alt="Myntra Review Scraper">
+                        <div class="overlay">
+                            <p>Myntra review scraper</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Grid Item 4 -->
                 <div class="grid-item" data-link="https://abhinayaanair.github.io/Spotify-clone/">
-                    <div class="inner-grid-div"><img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/2024-spotify-brand-assets-media-kit.jpg" alt=""></div>
+                    <div class="inner-grid-div">
+                        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/2024-spotify-brand-assets-media-kit.jpg" alt="Spotify Clone">
+                        <div class="overlay">
+                            <p>Spotify clone</p>
+                        </div>
+                    </div>
                 </div>
-               
-               
-            
+                <!-- Grid Item 5 -->
                 <div class="grid-item" data-link="https://github.com/abhinayaanair/Text-To-Image-Using-LLM">
-                    <div class="inner-grid-div"><img src="/images/text.png" alt=""></div>
+                    <div class="inner-grid-div">
+                        <img src="/images/text.png" alt="Text to Image">
+                        <div class="overlay">
+                            <p>Text to image generator</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="grid-item" data-link="tourco.vercel.app/">
-                    <div class="inner-grid-div"><img src="/images/TOURCO (1).png" alt=""></div>
+                <!-- Grid Item 6 -->
+                <div class="grid-item" data-link="https://tourco.vercel.app/listings">
+                    <div class="inner-grid-div">
+                        <img src="/images/TOURCO (1).png" alt="Tourco">
+                        <div class="overlay">
+                            <p>Tourco- Book your stay</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Grid Item 7 -->
                 <div class="grid-item" data-link="https://abhinayaanair.github.io/YOUTUBE-CLONE/youtube.html">
-                    <div class="inner-grid-div"><img src="https://1000logos.net/wp-content/uploads/2017/05/Color-YouTube-logo.jpg" alt=""></div>
+                    <div class="inner-grid-div">
+                        <img src="https://1000logos.net/wp-content/uploads/2017/05/Color-YouTube-logo.jpg" alt="YouTube Clone">
+                        <div class="overlay">
+                            <p>YouTube clone</p>
+                        </div>
+                    </div>
                 </div>
-                
+                <!-- Grid Item 8 -->
                 <div class="grid-item" data-link="https://ecochoice.onrender.com/ecochoice">
-                    <div class="inner-grid-div"><img src="/images/eco-choice.png" alt=""></div>
+                    <div class="inner-grid-div">
+                        <img src="/images/eco-choice.png" alt="Eco Choice">
+                        <div class="overlay">
+                            <p>Eco Choice - Reduce Carbon Footprints</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Grid Item 9 -->
                 <div class="grid-item" data-link="https://green-stich.vercel.app/">
-                    <div class="inner-grid-div"><img src="/images/greenstich.png" alt=""></div>
+                    <div class="inner-grid-div">
+                        <img src="/images/greenstich.png" alt="Green Stitch">
+                        <div class="overlay">
+                            <p>Green Stitch- Sustainable Ecommerce</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <!-- Navigation Bar -->
             <div class="navigation-bar">
                 <nav>
                     <ul>
@@ -68,7 +177,7 @@
                         <li><a href="https://github.com/abhinayaanair/"><i class="fa-brands fa-github"></i></a></li>
                     </ul>
                     <ul class="sidebar">
-                        <li onclick=hideSidebar()><i class="fa-solid fa-xmark" id="close"></i></li>
+                        <li onclick="hideSidebar()"><i class="fa-solid fa-xmark" id="close"></i></li>
                         <li class="house-li"><i class="fa-solid fa-house" id="house-nav"></i><a href="/portfolio" id="house-nav">Home</a></li>
                         <div></div>
                         <li class="about-li"><i class="fa-solid fa-user" id="about-nav"></i><a href="/portfolio/about" id="about-nav">About</a></li>
@@ -81,46 +190,33 @@
                         <div></div>
                     </ul>
                 </nav>
-                <div class="ham-div" onclick=showSidebar()><i class="fa-solid fa-bars hamburger-menu"></i></div>
+                <div class="ham-div" onclick="showSidebar()"><i class="fa-solid fa-bars hamburger-menu"></i></div>
             </div>
         </div>
     </div>
 
+    <!-- JavaScript for Sidebar and Click Navigation -->
     <script>
+        // Sidebar toggle functions
         const sidebar = document.querySelector(".sidebar");
-        const image = document.querySelector(".img");
+        const image = document.querySelector(".img"); // Note: No .img in this HTML, may be in navbar.css
 
         function showSidebar() {
             sidebar.style.display = "flex";
-            image.style.visibility = "hidden";
+            if (image) image.style.visibility = "hidden";
         }
 
         function hideSidebar() {
             sidebar.style.display = "none";
-            image.style.visibility = "visible";
+            if (image) image.style.visibility = "visible";
         }
 
-        let originalContent = {};
-        let gridItems = document.querySelectorAll(".grid-item");
-
+        // Click navigation for all devices
+        const gridItems = document.querySelectorAll(".grid-item");
         for (let i = 0; i < gridItems.length; i++) {
-            originalContent[i] = gridItems[i].innerHTML;
-            gridItems[i].addEventListener('mouseenter', () => changeIt(i, gridItems[i].dataset.link));
-            gridItems[i].addEventListener('mouseleave', () => changeAgain(i));
-            gridItems[i].addEventListener('touchstart', () => changeIt(i, gridItems[i].dataset.link));
-            gridItems[i].addEventListener('touchend', () => changeAgain(i));
-            gridItems[i].addEventListener('click', () => window.location.href = gridItems[i].dataset.link);
-        }
-
-        function changeIt(index, link) {
-            const innerdiv = gridItems[index].querySelector(".inner-grid-div");
-            innerdiv.innerHTML = `<div style="display:flex;justify-content:center;align-item:center;margin-top:23%; margin-bottom:23%"><p style="color:black;font-size:2rem;font-family:Poppins;text-decoration:none">CLICK</p></div>`;
-            gridItems[index].style.backgroundColor = "#AADC3F";
-        }
-
-        function changeAgain(index) {
-            gridItems[index].innerHTML = originalContent[index];
-            gridItems[index].style.backgroundColor = "transparent";
+            gridItems[i].addEventListener('click', () => {
+                window.location.href = gridItems[i].dataset.link;
+            });
         }
     </script>
 </body>
